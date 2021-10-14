@@ -18,7 +18,7 @@ const root = {
         return users
     },
     getUser: ({id}) => {
-        return users.find(user => user.id == id)
+        return users.find(user => user.id === id)
     },
     createUser: ({input}) => {
         const user = createUser(input)
@@ -26,7 +26,6 @@ const root = {
         return user
     }
 }
-
 
 app.use('/graphql', graphqlHTTP({
     graphiql: true,

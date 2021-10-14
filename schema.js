@@ -1,7 +1,7 @@
 const {buildSchema} = require('graphql')
 
 const schema = buildSchema(`
-    
+
     type User {
         id: ID
         username: String
@@ -33,7 +33,7 @@ const schema = buildSchema(`
     type Mutation {
         createUser(input: UserInput): User
     }
-
+    
 `)
 
 module.exports = schema
